@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+ 
+
+<hibernate-mapping>
+
+ 
+
+    <class name="com.vwits.model.Student" table="Student">
+        <id name="roll_no" column="roll_no" type="int">
+            <generator class="assigned"></generator>
+        </id>
+
+ 
+
+        <property name="name" column="name" type="string"></property>
+        <property name="password" column="password" type="string"></property>
+        <property name="email" column="email" type="string"></property>
+        <property name="contact" column="contact" type="int"></property>
+        
+    </class>
+    
+    <class name="com.vwits.model.Faculty" table="faculty">
+        <id name="id" column="id" type="int">
+            <generator class="assigned"></generator>
+        </id>
+
+ 
+
+        <property name="name" column="name" type="string"></property>
+        <property name="password" column="password" type="string"></property>
+        <property name="email" column="email" type="string"></property>
+        <property name="contact" column="contact" type="int"></property>
+        
+    </class>
+    
+    <class name="com.vwits.model.Test" table="test">
+        <id name="sr_no" column="sr_no" type="int">
+            <generator class="assigned"></generator>
+        </id>
+
+ 
+
+        <property name="question" column="question" type="string"></property>
+        <property name="option1" column="option1" type="string"></property>
+        <property name="option2" column="option2" type="string"></property>
+        <property name="option3" column="option3" type="string"></property>
+        <property name="option4" column="option4" type="string"></property>
+        <property name="correctans" column="correct" type="string"></property>
+        <property name="marks" column="marks" type="int"></property>
+        
+    </class>
+    
+    <class name="com.vwits.model.Result" table="result">
+        <id name="roll_no" column="roll_no" type="int">
+            <generator class="assigned"></generator>
+        </id>
+
+ 
+
+        <property name="name" column="name" type="string"></property>
+        <property name="marks" column="marks" type="int"></property>
+        <property name="totalmarks" column="total" type="int"></property>
+        
+        
+    </class>
+
+ 
+
+    
+ 
+
+ 
+
+
+</hibernate-mapping> 
